@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "verh"
+    "main"
+    "dno";
+}
+
+
+.verh{
+    grid-area: verh;
+    background-image: url(img/cat\ background.png);
+    background-color: rgb(27, 84, 221);
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-img{
+    width: 100%; /* Ширина 100% от родительского элемента */
+    height: 400px;
+    background-size: cover; /* Обеспечиваем, что изображение покрывает весь элемент */
+    background-position: center; /* Центрируем изображение */
+}
+@media (max-width:900px) 
+{
+    .flex-header{
+        background-color: rgb(27, 84, 221);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+    .header-img{
+        background-image: url('img/header\ cat.png');
+    }
+}
+@media (min-width:901px) 
+{
+    .flex-header{
+        background-color: rgb(27, 84, 221);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+    .header-img{
+        background-image: url('img/header\ cat-desktop.png');
+    }
+}
+
+.header-cat{
+    width: 100%;
+    height: auto;
+}
+.site-name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.figure-header{
+    width: 100px;
+    height: 50px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.text1{
+    /* display: flex; */
+    padding-top: 20%;
+    padding: auto;
+    font-weight: 600;
+    /* justify-content: center; */
+    text-align: center;
+    color: black;
+    /* background-color: aqua; */
+}
+
+
+
+.main{
+    background-image: url(img/cat\ background.png);
+    grid-area: main;
+    background-color:rgb(40, 40, 126);
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width:900px) 
+{
+    .flex-main1{
+        background-color: aqua;
+        width: 90%;
+        /* height: 33%; */
+        padding: 5%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .main1-block{
+        /* padding: 3%; */
+        /* margin: 2%; */
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+}
+@media (min-width:901px) 
+{
+    .flex-main1{
+        background-color: aqua;
+        width: 50%;
+        /* height: 33%; */
+        height: 300px;
+        padding: 1%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .main1-block{
+        /* padding: 3%; */
+        /* margin: 2%; */
+        margin-left: 2%;
+        margin-top: 1%;
+    }
+}
+.main-title{
+    font-weight: 800;
+}
+.link{
+    color: blue;
+    font-weight: 700;
+}
+
+
+
+.dno{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: 700;
+    grid-area: dno;
+    background-color: rgb(122, 122, 122);
+}
+.flex-bottom{
+    /* background-color: aquamarine; */
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.img-bottom{
+    /* background-color: rgb(214, 214, 214); */
+    margin-left: 1%;
+    /* width: 150px; */
+    /* height: 100px; */
+    height: auto;
+}
