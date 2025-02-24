@@ -46,4 +46,3 @@ test('check objects integrity', () => {
 });
 module.exports = sort_func;
 //expect(orderBy(pandasDefolt, prop)).toEqual([
-    //expect(() => orderBy(pandasFailObj, prop)).toThrow(new Error("Элемент 0 не является объектом"));
